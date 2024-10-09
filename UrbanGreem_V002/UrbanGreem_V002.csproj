@@ -1,0 +1,216 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{F6E6246F-F70A-498A-A89C-EFEC008CC420}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>UrbanGreem_V002</RootNamespace>
+    <AssemblyName>UrbanGreem_V002</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="FormAdicionarFornecedores.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormAdicionarFornecedores.Designer.cs">
+      <DependentUpon>FormAdicionarFornecedores.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormAdicionarFuncionarios.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormAdicionarFuncionarios.Designer.cs">
+      <DependentUpon>FormAdicionarFuncionarios.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormTelaLogin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormTelaLogin.Designer.cs">
+      <DependentUpon>FormTelaLogin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="FormTelaPrincipal.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormTelaPrincipal.Designer.cs">
+      <DependentUpon>FormTelaPrincipal.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControlFornecedores.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControlFornecedores.Designer.cs">
+      <DependentUpon>UserControlFornecedores.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControlFuncionarios.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControlFuncionarios.Designer.cs">
+      <DependentUpon>UserControlFuncionarios.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControlInicio.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControlInicio.Designer.cs">
+      <DependentUpon>UserControlInicio.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControlProducao.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControlProducao.Designer.cs">
+      <DependentUpon>UserControlProducao.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControlTituloFornecedores.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControlTituloFornecedores.Designer.cs">
+      <DependentUpon>UserControlTituloFornecedores.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControlTituloFuncionarios.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControlTituloFuncionarios.Designer.cs">
+      <DependentUpon>UserControlTituloFuncionarios.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControlTituloProducao.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControlTituloProducao.Designer.cs">
+      <DependentUpon>UserControlTituloProducao.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="FormAdicionarFornecedores.resx">
+      <DependentUpon>FormAdicionarFornecedores.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormAdicionarFuncionarios.resx">
+      <DependentUpon>FormAdicionarFuncionarios.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormTelaLogin.resx">
+      <DependentUpon>FormTelaLogin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="FormTelaPrincipal.resx">
+      <DependentUpon>FormTelaPrincipal.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControlFornecedores.resx">
+      <DependentUpon>UserControlFornecedores.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControlFuncionarios.resx">
+      <DependentUpon>UserControlFuncionarios.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControlInicio.resx">
+      <DependentUpon>UserControlInicio.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControlProducao.resx">
+      <DependentUpon>UserControlProducao.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControlTituloFornecedores.resx">
+      <DependentUpon>UserControlTituloFornecedores.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControlTituloFuncionarios.resx">
+      <DependentUpon>UserControlTituloFuncionarios.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControlTituloProducao.resx">
+      <DependentUpon>UserControlTituloProducao.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\URBAN GREEN - background desk_web %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Inserir um pouquinho de texto.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Inserir um pouquinho de texto.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\URBAN GREEN - Logo nome sistema.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\URBAN GREEN - Icone início.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\URBAN GREEN - Logo com nome.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\URBAN GREEN - Icone fornecedores.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\URBAN GREEN - Icone fornecedores %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\URBAN GREEN - Titulo fornecedores.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\URBAN GREEN - background desk_web %281%291.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\URBAN GREEN - Titulo funcionarios.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\URBAN GREEN - Icone produção.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\URBAN GREEN - Titulo producao.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\URBAN GREEN - Icone sair.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
