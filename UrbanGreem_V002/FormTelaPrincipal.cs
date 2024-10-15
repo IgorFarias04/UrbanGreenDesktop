@@ -27,6 +27,7 @@ namespace UrbanGreem_V002
             UserControlInicio userControl = new UserControlInicio();
             userControl.Dock = DockStyle.Fill;
             panelPrincipal.Controls.Add(userControl);
+            FecharEstoque();
         }
 
         private void btnFuncionarios_Click(object sender, EventArgs e)
@@ -40,6 +41,7 @@ namespace UrbanGreem_V002
             tituloFuncionarios.Dock = DockStyle.Fill;
             panelTitulo.Controls.Add(tituloFuncionarios);
             ExibirFuncionario();
+            FecharEstoque();
         }
 
         private void btnFornecedores_Click(object sender, EventArgs e)
@@ -53,6 +55,7 @@ namespace UrbanGreem_V002
             tituloFornecedores.Dock = DockStyle.Fill;
             panelTitulo.Controls.Add(tituloFornecedores);
             ExibirFornecedores();
+            FecharEstoque();
         }
 
         private void btnProducao_Click(object sender, EventArgs e)
@@ -65,7 +68,59 @@ namespace UrbanGreem_V002
             UserControlTituloProducao tituloProducao = new UserControlTituloProducao();
             tituloProducao.Dock = DockStyle.Fill;
             panelTitulo.Controls.Add(tituloProducao);
+            FecharEstoque();
         }
+
+        private void btnVendas_Click(object sender, EventArgs e)
+        {
+            panelPrincipal.Controls.Clear();
+            panelTitulo.Controls.Clear();
+            panelTitulo.Visible = true;
+            panelPrincipal.Size = new Size(1579, 806);
+            panelPrincipal.Location = new Point(296, 188);
+            UserControlTituloVendas tituloVendas = new UserControlTituloVendas();
+            tituloVendas.Dock = DockStyle.Fill;
+            panelTitulo.Controls.Add(tituloVendas);
+            FecharEstoque();
+        }
+
+        private void btnPedidos_Click(object sender, EventArgs e)
+        {
+            panelPrincipal.Controls.Clear();
+            panelTitulo.Controls.Clear();
+            panelTitulo.Visible = true;
+            panelPrincipal.Size = new Size(1579, 806);
+            panelPrincipal.Location = new Point(296, 188);
+            UserControlTituloPedidos tituloPedidos = new UserControlTituloPedidos();
+            tituloPedidos.Dock = DockStyle.Fill;
+            panelTitulo.Controls.Add(tituloPedidos);
+            FecharEstoque();
+        }
+
+        private void btnProdutos_Click(object sender, EventArgs e)
+        {
+            panelPrincipal.Controls.Clear();
+            panelTitulo.Controls.Clear();
+            panelTitulo.Visible = true;
+            panelPrincipal.Size = new Size(1579, 806);
+            panelPrincipal.Location = new Point(296, 188);
+            UserControlTituloProdutos tituloProdutos = new UserControlTituloProdutos();
+            tituloProdutos.Dock = DockStyle.Fill;
+            panelTitulo.Controls.Add(tituloProdutos);
+        }
+
+        private void btnInsumos_Click(object sender, EventArgs e)
+        {
+            panelPrincipal.Controls.Clear();
+            panelTitulo.Controls.Clear();
+            panelTitulo.Visible = true;
+            panelPrincipal.Size = new Size(1579, 806);
+            panelPrincipal.Location = new Point(296, 188);
+            UserControlTituloInsumos tituloInsumos = new UserControlTituloInsumos();
+            tituloInsumos.Dock = DockStyle.Fill;
+            panelTitulo.Controls.Add(tituloInsumos);
+        }
+
 
         //----------- FORNECEDORES ----------
 
@@ -159,5 +214,26 @@ namespace UrbanGreem_V002
             telaLogin.ShowDialog();
         }
 
+        private void btnEstoque_Click(object sender, EventArgs e)
+        {
+            // Verifica o estado atual de visibilidade de um dos componentes, por exemplo, btnProdutos
+            bool isVisible = btnProdutos.Visible;
+
+            // Inverte o estado de visibilidade dos botões e painéis
+            btnProdutos.Visible = !isVisible;
+            btnInsumos.Visible = !isVisible;
+            panel3.Visible = !isVisible;
+            panel4.Visible = !isVisible;
+            panel150.Visible = !isVisible;
+        }
+
+        private void FecharEstoque()
+        {
+            btnProdutos.Visible = false;
+            btnInsumos.Visible = false;
+            panel3.Visible = false;
+            panel4.Visible = false;
+            panel150.Visible = false;
+        }
     }
 }

@@ -53,7 +53,6 @@ namespace UrbanGreem_V002
 
         private void btnEditarFornecedores_Click(object sender, EventArgs e)
         {
-            // Criar uma nova instância do formulário de adicionar fornecedores
             FormAdicionarFornecedores formAdicionar = new FormAdicionarFornecedores();
 
             // Carregar os dados atuais nos campos de texto
@@ -91,5 +90,6 @@ namespace UrbanGreem_V002
                 formTelaPrincipal.RemoverFornecedor(this);
             }
         }
+
     }
 }

@@ -1,6 +1,6 @@
 ﻿namespace UrbanGreem_V002
 {
-    partial class UserControlTituloProducao
+    partial class UserControlTituloPedidos
     {
         /// <summary> 
         /// Variável de designer necessária.
@@ -34,20 +34,20 @@
             // 
             // pictureBox1
             // 
-            this.pictureBox1.Image = global::UrbanGreem_V002.Properties.Resources.URBAN_GREEN___Titulo_producao;
+            this.pictureBox1.Image = global::UrbanGreem_V002.Properties.Resources.URBAN_GREEN___Titulo__pedidos;
             this.pictureBox1.Location = new System.Drawing.Point(-403, 0);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(1579, 86);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox1.TabIndex = 1;
+            this.pictureBox1.TabIndex = 2;
             this.pictureBox1.TabStop = false;
             // 
-            // UserControlTituloProducao
+            // UserControlTituloPedidos
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.Controls.Add(this.pictureBox1);
-            this.Name = "UserControlTituloProducao";
+            this.Name = "UserControlTituloPedidos";
             this.Size = new System.Drawing.Size(1579, 86);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);

@@ -90,11 +90,29 @@
     <Compile Include="UserControlInicio.Designer.cs">
       <DependentUpon>UserControlInicio.cs</DependentUpon>
     </Compile>
+    <Compile Include="UserControlInsumos.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControlInsumos.Designer.cs">
+      <DependentUpon>UserControlInsumos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControlPedidos.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControlPedidos.Designer.cs">
+      <DependentUpon>UserControlPedidos.cs</DependentUpon>
+    </Compile>
     <Compile Include="UserControlProducao.cs">
       <SubType>UserControl</SubType>
     </Compile>
     <Compile Include="UserControlProducao.Designer.cs">
       <DependentUpon>UserControlProducao.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControlProdutos.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControlProdutos.Designer.cs">
+      <DependentUpon>UserControlProdutos.cs</DependentUpon>
     </Compile>
     <Compile Include="UserControlTituloFornecedores.cs">
       <SubType>UserControl</SubType>
@@ -108,11 +126,41 @@
     <Compile Include="UserControlTituloFuncionarios.Designer.cs">
       <DependentUpon>UserControlTituloFuncionarios.cs</DependentUpon>
     </Compile>
+    <Compile Include="UserControlTituloInsumos.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControlTituloInsumos.Designer.cs">
+      <DependentUpon>UserControlTituloInsumos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControlTituloPedidos.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControlTituloPedidos.Designer.cs">
+      <DependentUpon>UserControlTituloPedidos.cs</DependentUpon>
+    </Compile>
     <Compile Include="UserControlTituloProducao.cs">
       <SubType>UserControl</SubType>
     </Compile>
     <Compile Include="UserControlTituloProducao.Designer.cs">
       <DependentUpon>UserControlTituloProducao.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControlTituloProdutos.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControlTituloProdutos.Designer.cs">
+      <DependentUpon>UserControlTituloProdutos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControlTituloVendas.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControlTituloVendas.Designer.cs">
+      <DependentUpon>UserControlTituloVendas.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControlVendas.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControlVendas.Designer.cs">
+      <DependentUpon>UserControlVendas.cs</DependentUpon>
     </Compile>
     <EmbeddedResource Include="FormAdicionarFornecedores.resx">
       <DependentUpon>FormAdicionarFornecedores.cs</DependentUpon>
@@ -145,8 +193,17 @@
     <EmbeddedResource Include="UserControlInicio.resx">
       <DependentUpon>UserControlInicio.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="UserControlInsumos.resx">
+      <DependentUpon>UserControlInsumos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControlPedidos.resx">
+      <DependentUpon>UserControlPedidos.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="UserControlProducao.resx">
       <DependentUpon>UserControlProducao.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControlProdutos.resx">
+      <DependentUpon>UserControlProdutos.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="UserControlTituloFornecedores.resx">
       <DependentUpon>UserControlTituloFornecedores.cs</DependentUpon>
@@ -154,8 +211,23 @@
     <EmbeddedResource Include="UserControlTituloFuncionarios.resx">
       <DependentUpon>UserControlTituloFuncionarios.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="UserControlTituloInsumos.resx">
+      <DependentUpon>UserControlTituloInsumos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControlTituloPedidos.resx">
+      <DependentUpon>UserControlTituloPedidos.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="UserControlTituloProducao.resx">
       <DependentUpon>UserControlTituloProducao.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControlTituloProdutos.resx">
+      <DependentUpon>UserControlTituloProdutos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControlTituloVendas.resx">
+      <DependentUpon>UserControlTituloVendas.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControlVendas.resx">
+      <DependentUpon>UserControlVendas.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
@@ -211,6 +283,15 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\URBAN GREEN - Icone sair.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\URBAN GREEN - Titulo  vendas.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\URBAN GREEN - Titulo  pedidos.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\URBAN GREEN - Titulo  estoque.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

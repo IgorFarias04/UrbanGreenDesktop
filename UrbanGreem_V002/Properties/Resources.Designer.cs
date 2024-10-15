@@ -173,6 +173,36 @@ namespace UrbanGreem_V002.Properties {
         /// <summary>
         ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap URBAN_GREEN___Titulo__estoque {
+            get {
+                object obj = ResourceManager.GetObject("URBAN GREEN - Titulo  estoque", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap URBAN_GREEN___Titulo__pedidos {
+            get {
+                object obj = ResourceManager.GetObject("URBAN GREEN - Titulo  pedidos", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap URBAN_GREEN___Titulo__vendas {
+            get {
+                object obj = ResourceManager.GetObject("URBAN GREEN - Titulo  vendas", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap URBAN_GREEN___Titulo_fornecedores {
             get {
                 object obj = ResourceManager.GetObject("URBAN GREEN - Titulo fornecedores", resourceCulture);
