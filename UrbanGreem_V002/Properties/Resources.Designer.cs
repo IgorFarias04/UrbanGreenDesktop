@@ -63,6 +63,16 @@ namespace UrbanGreem_V002.Properties {
         /// <summary>
         ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap _4211547 {
+            get {
+                object obj = ResourceManager.GetObject("4211547", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap Inserir_um_pouquinho_de_texto {
             get {
                 object obj = ResourceManager.GetObject("Inserir um pouquinho de texto", resourceCulture);

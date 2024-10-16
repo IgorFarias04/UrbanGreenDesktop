@@ -29,6 +29,8 @@
         private void InitializeComponent()
         {
             this.panel1 = new System.Windows.Forms.Panel();
+            this.label2 = new System.Windows.Forms.Label();
+            this.label1 = new System.Windows.Forms.Label();
             this.lblAdicionarProduto = new System.Windows.Forms.Label();
             this.btnExcluirProduto = new System.Windows.Forms.Button();
             this.btnEditaarProduto = new System.Windows.Forms.Button();
@@ -42,6 +44,8 @@
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.White;
+            this.panel1.Controls.Add(this.label2);
+            this.panel1.Controls.Add(this.label1);
             this.panel1.Controls.Add(this.lblAdicionarProduto);
             this.panel1.Controls.Add(this.btnExcluirProduto);
             this.panel1.Controls.Add(this.btnEditaarProduto);
@@ -53,21 +57,45 @@
             this.panel1.Size = new System.Drawing.Size(1551, 123);
             this.panel1.TabIndex = 0;
             // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.ForeColor = System.Drawing.Color.DarkGreen;
+            this.label2.Location = new System.Drawing.Point(497, 32);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(42, 16);
+            this.label2.TabIndex = 7;
+            this.label2.Text = "Valor:";
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.ForeColor = System.Drawing.Color.DarkGreen;
+            this.label1.Location = new System.Drawing.Point(284, 32);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(155, 16);
+            this.label1.TabIndex = 6;
+            this.label1.Text = "Quantidade em Estoque:";
+            // 
             // lblAdicionarProduto
             // 
             this.lblAdicionarProduto.AutoSize = true;
-            this.lblAdicionarProduto.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblAdicionarProduto.Location = new System.Drawing.Point(160, 51);
+            this.lblAdicionarProduto.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblAdicionarProduto.ForeColor = System.Drawing.Color.DarkGreen;
+            this.lblAdicionarProduto.Location = new System.Drawing.Point(151, 48);
             this.lblAdicionarProduto.Name = "lblAdicionarProduto";
-            this.lblAdicionarProduto.Size = new System.Drawing.Size(61, 16);
+            this.lblAdicionarProduto.Size = new System.Drawing.Size(83, 24);
             this.lblAdicionarProduto.TabIndex = 5;
             this.lblAdicionarProduto.Text = "Produto";
             // 
             // btnExcluirProduto
             // 
-            this.btnExcluirProduto.Location = new System.Drawing.Point(737, 51);
+            this.btnExcluirProduto.ForeColor = System.Drawing.Color.DarkGreen;
+            this.btnExcluirProduto.Location = new System.Drawing.Point(737, 45);
             this.btnExcluirProduto.Name = "btnExcluirProduto";
-            this.btnExcluirProduto.Size = new System.Drawing.Size(33, 23);
+            this.btnExcluirProduto.Size = new System.Drawing.Size(73, 35);
             this.btnExcluirProduto.TabIndex = 4;
             this.btnExcluirProduto.Text = "excluir";
             this.btnExcluirProduto.UseVisualStyleBackColor = true;
@@ -75,9 +103,10 @@
             // 
             // btnEditaarProduto
             // 
-            this.btnEditaarProduto.Location = new System.Drawing.Point(649, 51);
+            this.btnEditaarProduto.ForeColor = System.Drawing.Color.DarkGreen;
+            this.btnEditaarProduto.Location = new System.Drawing.Point(644, 45);
             this.btnEditaarProduto.Name = "btnEditaarProduto";
-            this.btnEditaarProduto.Size = new System.Drawing.Size(33, 23);
+            this.btnEditaarProduto.Size = new System.Drawing.Size(74, 35);
             this.btnEditaarProduto.TabIndex = 3;
             this.btnEditaarProduto.Text = "Editar";
             this.btnEditaarProduto.UseVisualStyleBackColor = true;
@@ -86,20 +115,22 @@
             // lblValorProduto
             // 
             this.lblValorProduto.AutoSize = true;
-            this.lblValorProduto.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblValorProduto.Location = new System.Drawing.Point(56, 127);
+            this.lblValorProduto.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblValorProduto.ForeColor = System.Drawing.Color.DarkGreen;
+            this.lblValorProduto.Location = new System.Drawing.Point(492, 51);
             this.lblValorProduto.Name = "lblValorProduto";
-            this.lblValorProduto.Size = new System.Drawing.Size(44, 16);
+            this.lblValorProduto.Size = new System.Drawing.Size(51, 20);
             this.lblValorProduto.TabIndex = 2;
             this.lblValorProduto.Text = "Valor";
             // 
             // lblQuantidadeEmEstoque
             // 
             this.lblQuantidadeEmEstoque.AutoSize = true;
-            this.lblQuantidadeEmEstoque.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblQuantidadeEmEstoque.Location = new System.Drawing.Point(303, 51);
+            this.lblQuantidadeEmEstoque.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblQuantidadeEmEstoque.ForeColor = System.Drawing.Color.DarkGreen;
+            this.lblQuantidadeEmEstoque.Location = new System.Drawing.Point(301, 51);
             this.lblQuantidadeEmEstoque.Name = "lblQuantidadeEmEstoque";
-            this.lblQuantidadeEmEstoque.Size = new System.Drawing.Size(91, 16);
+            this.lblQuantidadeEmEstoque.Size = new System.Drawing.Size(107, 20);
             this.lblQuantidadeEmEstoque.TabIndex = 1;
             this.lblQuantidadeEmEstoque.Text = "Quantidade \r\n";
             // 
@@ -108,6 +139,7 @@
             this.imagemProdutosUser.Location = new System.Drawing.Point(21, 11);
             this.imagemProdutosUser.Name = "imagemProdutosUser";
             this.imagemProdutosUser.Size = new System.Drawing.Size(100, 101);
+            this.imagemProdutosUser.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.imagemProdutosUser.TabIndex = 0;
             this.imagemProdutosUser.TabStop = false;
             // 
@@ -115,10 +147,10 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.SystemColors.ActiveBorder;
+            this.BackColor = System.Drawing.SystemColors.ButtonFace;
             this.Controls.Add(this.panel1);
             this.Name = "UserControlProdutos";
-            this.Size = new System.Drawing.Size(1579, 150);
+            this.Size = new System.Drawing.Size(1579, 149);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.imagemProdutosUser)).EndInit();
@@ -130,10 +162,12 @@
 
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Label lblQuantidadeEmEstoque;
-        private System.Windows.Forms.PictureBox imagemProdutosUser;
         private System.Windows.Forms.Label lblValorProduto;
         private System.Windows.Forms.Button btnExcluirProduto;
         private System.Windows.Forms.Button btnEditaarProduto;
         private System.Windows.Forms.Label lblAdicionarProduto;
+        private System.Windows.Forms.PictureBox imagemProdutosUser;
+        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Label label1;
     }
 }

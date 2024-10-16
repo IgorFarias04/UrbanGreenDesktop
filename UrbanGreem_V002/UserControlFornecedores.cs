@@ -54,7 +54,7 @@ namespace UrbanGreem_V002
         private void btnEditarFornecedores_Click(object sender, EventArgs e)
         {
             FormAdicionarFornecedores formAdicionar = new FormAdicionarFornecedores();
-
+            
             // Carregar os dados atuais nos campos de texto
             formAdicionar.Empresa = lblEmpresa.Text;
             formAdicionar.Responsavel = lblResponsavel.Text;
@@ -66,6 +66,7 @@ namespace UrbanGreem_V002
             // Mostrar o formulário e aguardar a resposta
             if (formAdicionar.ShowDialog() == DialogResult.OK)
             {
+                
                 // Atualiza os labels com as novas informações
                 lblEmpresa.Text = formAdicionar.Empresa;
                 lblResponsavel.Text = formAdicionar.Responsavel;

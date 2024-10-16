@@ -117,9 +117,10 @@ namespace UrbanGreem_V002
             panelTitulo.Visible = true;
             panelPrincipal.Size = new Size(1579, 806);
             panelPrincipal.Location = new Point(296, 188);
-            UserControlTituloInsumos tituloInsumos = new UserControlTituloInsumos();
+            UserControlTituloInsumos tituloInsumos = new UserControlTituloInsumos(this);
             tituloInsumos.Dock = DockStyle.Fill;
             panelTitulo.Controls.Add(tituloInsumos);
+            ExibirInsumos();
         }
 
 
@@ -242,6 +243,36 @@ namespace UrbanGreem_V002
             }
         }
 
+
+        private List<UserControlInsumos> insumos = new List<UserControlInsumos>();
+
+        // Método para adicionar fornecedor na lista e no painel
+        public void AdicionarInsumos(UserControlInsumos insumo)
+        {
+            insumo.Dock = DockStyle.Top;
+            insumos.Add(insumo);
+            panelPrincipal.Controls.Add(insumo);
+        }
+
+        // Método para reexibir os fornecedores
+        public void ExibirInsumos()
+        {
+            panelPrincipal.Controls.Clear(); // Limpa o painel para exibir os fornecedores
+            foreach (var insumo in insumos)
+            {
+                panelPrincipal.Controls.Add(insumo); // Reimprime todos os fornecedores
+            }
+        }
+
+        public void RemoverInsumos(UserControlInsumos insumos)
+        {
+            // Verifica se o panelPrincipal contém o UserControl e o remove
+            if (panelPrincipal.Controls.Contains(insumos))
+            {
+                panelPrincipal.Controls.Remove(insumos);
+                insumos.Dispose(); // Libera os recursos do UserControl
+            }
+        }
 
 
 

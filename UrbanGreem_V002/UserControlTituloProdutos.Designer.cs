@@ -45,6 +45,7 @@
             // 
             // btnAdicionarProdutos
             // 
+            this.btnAdicionarProdutos.ForeColor = System.Drawing.Color.DarkGreen;
             this.btnAdicionarProdutos.Location = new System.Drawing.Point(1328, 19);
             this.btnAdicionarProdutos.Name = "btnAdicionarProdutos";
             this.btnAdicionarProdutos.Size = new System.Drawing.Size(128, 53);

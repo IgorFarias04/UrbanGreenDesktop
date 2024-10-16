@@ -45,6 +45,7 @@
             // 
             // btnAdicionarFuncionarios
             // 
+            this.btnAdicionarFuncionarios.ForeColor = System.Drawing.Color.DarkGreen;
             this.btnAdicionarFuncionarios.Location = new System.Drawing.Point(1328, 19);
             this.btnAdicionarFuncionarios.Name = "btnAdicionarFuncionarios";
             this.btnAdicionarFuncionarios.Size = new System.Drawing.Size(128, 53);

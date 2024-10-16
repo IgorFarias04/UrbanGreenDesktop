@@ -62,5 +62,29 @@ namespace UrbanGreem_V002
                 txtValorProduto.SelectAll();
             }
         }
+
+        public Image ImagemProduto
+        {
+            get { return imagemProduto.Image; }
+            set { imagemProduto.Image = value; }
+        }
+
+        private void btnAdicionarImagem_Click(object sender, EventArgs e)
+        {
+            using (OpenFileDialog openFileDialog = new OpenFileDialog())
+            {
+                openFileDialog.Filter = "Imagens (*.jpg;*.jpeg;*.png)|*.jpg;*.jpeg;*.png";
+                if (openFileDialog.ShowDialog() == DialogResult.OK)
+                {
+                    imagemProduto.Image = Image.FromFile(openFileDialog.FileName);
+                    // Supondo que você já tenha uma instância do UserControlProdutos
+                }
+
+            }
+        }
+
+
+
+
     }
 }

@@ -58,6 +58,12 @@
     <Compile Include="FormAdicionarFuncionarios.Designer.cs">
       <DependentUpon>FormAdicionarFuncionarios.cs</DependentUpon>
     </Compile>
+    <Compile Include="FormAdicionarInsumos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormAdicionarInsumos.Designer.cs">
+      <DependentUpon>FormAdicionarInsumos.cs</DependentUpon>
+    </Compile>
     <Compile Include="FormAdicionarProdutos.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -173,6 +179,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="FormAdicionarFuncionarios.resx">
       <DependentUpon>FormAdicionarFuncionarios.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormAdicionarInsumos.resx">
+      <DependentUpon>FormAdicionarInsumos.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FormAdicionarProdutos.resx">
       <DependentUpon>FormAdicionarProdutos.cs</DependentUpon>
@@ -301,6 +310,9 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\URBAN GREEN - Titulo  estoque.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\4211547.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

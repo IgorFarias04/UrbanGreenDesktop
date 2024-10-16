@@ -12,6 +12,7 @@ namespace UrbanGreem_V002
 {
     public partial class UserControlTituloProdutos : UserControl
     {
+        
         private FormTelaPrincipal formTelaPrincipal;
         public UserControlTituloProdutos(FormTelaPrincipal principal)
         {
@@ -22,7 +23,6 @@ namespace UrbanGreem_V002
         private void btnAdicionarProdutos_Click(object sender, EventArgs e)
         {
             FormAdicionarProdutos formAdicionar = new FormAdicionarProdutos();
-
             // Verifique se o ShowDialog() está retornando OK
             if (formAdicionar.ShowDialog() == DialogResult.OK)
             {
@@ -32,6 +32,7 @@ namespace UrbanGreem_V002
                 novoProduto.AdicionarProduto = formAdicionar.AdicionarProduto;
                 novoProduto.QuantidadeEmEstoque = formAdicionar.QuantiadadeEmEstoque;
                 novoProduto.ValorProduto = formAdicionar.ValorProduto;
+                novoProduto.AtualizarImagemProduto(formAdicionar.ImagemProduto);
                 // Adicionar o UserControl no panelPrincipal do FormTelaPrincipal
                 formTelaPrincipal.AdicionarProdutos(novoProduto);
             }

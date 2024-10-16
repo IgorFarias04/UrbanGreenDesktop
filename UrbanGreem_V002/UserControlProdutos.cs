@@ -32,15 +32,22 @@ namespace UrbanGreem_V002
             set { lblValorProduto.Text = value; }
         }
 
+        public void AtualizarImagemProduto(Image imagem)
+        {
+            if (imagem != null)
+            {
+                imagemProdutosUser.Image = imagem; // Defina a imagem no pictureBox do UserControl
+            }
+        }
+
         private void btnEditaarProduto_Click(object sender, EventArgs e)
         {
             FormAdicionarProdutos formAdicionar = new FormAdicionarProdutos();
-
             // Carregar os dados atuais nos campos de texto
             formAdicionar.AdicionarProduto = lblAdicionarProduto.Text;
             formAdicionar.QuantiadadeEmEstoque = lblQuantidadeEmEstoque.Text;
             formAdicionar.ValorProduto = lblValorProduto.Text;
-
+            formAdicionar.ImagemProduto = imagemProdutosUser.Image;
             // Mostrar o formulário e aguardar a resposta
             if (formAdicionar.ShowDialog() == DialogResult.OK)
             {
@@ -48,13 +55,26 @@ namespace UrbanGreem_V002
                 lblAdicionarProduto.Text = formAdicionar.AdicionarProduto;
                 lblQuantidadeEmEstoque.Text = formAdicionar.QuantiadadeEmEstoque;
                 lblValorProduto.Text = formAdicionar.ValorProduto;
-      
+                if (formAdicionar.ImagemProduto != null)
+                {
+                    imagemProdutosUser.Image = formAdicionar.ImagemProduto;
+                }
             }
         }
 
         private void btnExcluirProduto_Click(object sender, EventArgs e)
         {
+            ExcluirProdutos();
+        }
 
+        private void ExcluirProdutos()
+        {
+            // Verifica se o Parent do UserControl é o FormTelaPrincipal
+            if (this.Parent is Panel panel && panel.Parent is FormTelaPrincipal formTelaPrincipal)
+            {
+                // Chama o método do FormTelaPrincipal para remover o UserControl
+                formTelaPrincipal.RemoverProdutos(this);
+            }
         }
     }
 }

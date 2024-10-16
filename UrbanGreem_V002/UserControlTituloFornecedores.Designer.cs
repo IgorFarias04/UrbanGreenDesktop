@@ -35,6 +35,7 @@
             // 
             // btnAdicionarFornecedores
             // 
+            this.btnAdicionarFornecedores.ForeColor = System.Drawing.Color.DarkGreen;
             this.btnAdicionarFornecedores.Location = new System.Drawing.Point(1328, 19);
             this.btnAdicionarFornecedores.Name = "btnAdicionarFornecedores";
             this.btnAdicionarFornecedores.Size = new System.Drawing.Size(128, 53);

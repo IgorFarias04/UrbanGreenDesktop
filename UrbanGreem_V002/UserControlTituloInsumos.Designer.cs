@@ -45,12 +45,14 @@
             // 
             // btnAdicionarInsumos
             // 
+            this.btnAdicionarInsumos.ForeColor = System.Drawing.Color.DarkGreen;
             this.btnAdicionarInsumos.Location = new System.Drawing.Point(1328, 19);
             this.btnAdicionarInsumos.Name = "btnAdicionarInsumos";
             this.btnAdicionarInsumos.Size = new System.Drawing.Size(128, 53);
             this.btnAdicionarInsumos.TabIndex = 5;
             this.btnAdicionarInsumos.Text = "Adicionar Insumos";
             this.btnAdicionarInsumos.UseVisualStyleBackColor = true;
+            this.btnAdicionarInsumos.Click += new System.EventHandler(this.btnAdicionarInsumos_Click);
             // 
             // UserControlTituloInsumos
             // 
