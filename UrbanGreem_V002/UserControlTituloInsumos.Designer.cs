@@ -29,6 +29,7 @@
         private void InitializeComponent()
         {
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.btnAdicionarInsumos = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -42,10 +43,20 @@
             this.pictureBox1.TabIndex = 4;
             this.pictureBox1.TabStop = false;
             // 
+            // btnAdicionarInsumos
+            // 
+            this.btnAdicionarInsumos.Location = new System.Drawing.Point(1328, 19);
+            this.btnAdicionarInsumos.Name = "btnAdicionarInsumos";
+            this.btnAdicionarInsumos.Size = new System.Drawing.Size(128, 53);
+            this.btnAdicionarInsumos.TabIndex = 5;
+            this.btnAdicionarInsumos.Text = "Adicionar Insumos";
+            this.btnAdicionarInsumos.UseVisualStyleBackColor = true;
+            // 
             // UserControlTituloInsumos
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.Controls.Add(this.btnAdicionarInsumos);
             this.Controls.Add(this.pictureBox1);
             this.Name = "UserControlTituloInsumos";
             this.Size = new System.Drawing.Size(1579, 86);
@@ -57,5 +68,6 @@
         #endregion
 
         private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.Button btnAdicionarInsumos;
     }
 }

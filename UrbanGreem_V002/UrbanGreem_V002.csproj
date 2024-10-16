@@ -58,6 +58,12 @@
     <Compile Include="FormAdicionarFuncionarios.Designer.cs">
       <DependentUpon>FormAdicionarFuncionarios.cs</DependentUpon>
     </Compile>
+    <Compile Include="FormAdicionarProdutos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormAdicionarProdutos.Designer.cs">
+      <DependentUpon>FormAdicionarProdutos.cs</DependentUpon>
+    </Compile>
     <Compile Include="FormTelaLogin.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -167,6 +173,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="FormAdicionarFuncionarios.resx">
       <DependentUpon>FormAdicionarFuncionarios.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormAdicionarProdutos.resx">
+      <DependentUpon>FormAdicionarProdutos.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FormTelaLogin.resx">
       <DependentUpon>FormTelaLogin.cs</DependentUpon>

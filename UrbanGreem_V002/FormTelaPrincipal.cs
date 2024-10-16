@@ -104,9 +104,10 @@ namespace UrbanGreem_V002
             panelTitulo.Visible = true;
             panelPrincipal.Size = new Size(1579, 806);
             panelPrincipal.Location = new Point(296, 188);
-            UserControlTituloProdutos tituloProdutos = new UserControlTituloProdutos();
+            UserControlTituloProdutos tituloProdutos = new UserControlTituloProdutos(this);
             tituloProdutos.Dock = DockStyle.Fill;
             panelTitulo.Controls.Add(tituloProdutos);
+            ExibirProdutos();
         }
 
         private void btnInsumos_Click(object sender, EventArgs e)
@@ -124,15 +125,7 @@ namespace UrbanGreem_V002
 
         //----------- FORNECEDORES ----------
 
-        public void RemoverFornecedor(UserControlFornecedores fornecedor)
-        {
-            // Verifica se o panelPrincipal contém o UserControl e o remove
-            if (panelPrincipal.Controls.Contains(fornecedor))
-            {
-                panelPrincipal.Controls.Remove(fornecedor);
-                fornecedor.Dispose(); // Libera os recursos do UserControl
-            }
-        }
+   
 
         private void txtPesquisa_TextChanged(object sender, EventArgs e)
         {
@@ -175,17 +168,19 @@ namespace UrbanGreem_V002
             }
         }
 
-        //------------ FUNCIONARIOS ---------------
-
-        public void RemoverFuncionario(UserControlFuncionarios funcionarios)
+        public void RemoverFornecedor(UserControlFornecedores fornecedor)
         {
             // Verifica se o panelPrincipal contém o UserControl e o remove
-            if (panelPrincipal.Controls.Contains(funcionarios))
+            if (panelPrincipal.Controls.Contains(fornecedor))
             {
-                panelPrincipal.Controls.Remove(funcionarios);
-                funcionarios.Dispose(); // Libera os recursos do UserControl
+                panelPrincipal.Controls.Remove(fornecedor);
+                fornecedor.Dispose(); // Libera os recursos do UserControl
             }
         }
+
+        //------------ FUNCIONARIOS ---------------
+
+
 
         private List<UserControlFuncionarios> funcionarios = new List<UserControlFuncionarios>();
 
@@ -207,12 +202,63 @@ namespace UrbanGreem_V002
             }
         }
 
+        public void RemoverFuncionario(UserControlFuncionarios funcionarios)
+        {
+            // Verifica se o panelPrincipal contém o UserControl e o remove
+            if (panelPrincipal.Controls.Contains(funcionarios))
+            {
+                panelPrincipal.Controls.Remove(funcionarios);
+                funcionarios.Dispose(); // Libera os recursos do UserControl
+            }
+        }
+
+        private List<UserControlProdutos> produtos = new List<UserControlProdutos>();
+
+        // Método para adicionar fornecedor na lista e no painel
+        public void AdicionarProdutos(UserControlProdutos produto)
+        {
+            produto.Dock = DockStyle.Top;
+            produtos.Add(produto);
+            panelPrincipal.Controls.Add(produto);
+        }
+
+        // Método para reexibir os fornecedores
+        public void ExibirProdutos()
+        {
+            panelPrincipal.Controls.Clear(); // Limpa o painel para exibir os fornecedores
+            foreach (var produto in produtos)
+            {
+                panelPrincipal.Controls.Add(produto); // Reimprime todos os fornecedores
+            }
+        }
+
+        public void RemoverProdutos(UserControlProdutos produtos)
+        {
+            // Verifica se o panelPrincipal contém o UserControl e o remove
+            if (panelPrincipal.Controls.Contains(produtos))
+            {
+                panelPrincipal.Controls.Remove(produtos);
+                produtos.Dispose(); // Libera os recursos do UserControl
+            }
+        }
+
+
+
+
+
+
         private void btnSair_Click(object sender, EventArgs e)
         {
             this.Close();
             FormTelaLogin telaLogin = new FormTelaLogin();
             telaLogin.ShowDialog();
         }
+
+
+
+
+
+
 
         private void btnEstoque_Click(object sender, EventArgs e)
         {
