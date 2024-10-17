@@ -29,8 +29,9 @@
         private void InitializeComponent()
         {
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.btnAdicionarProdutos = new System.Windows.Forms.Button();
+            this.btnAdicionarProdutos = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.btnAdicionarProdutos)).BeginInit();
             this.SuspendLayout();
             // 
             // pictureBox1
@@ -45,13 +46,13 @@
             // 
             // btnAdicionarProdutos
             // 
-            this.btnAdicionarProdutos.ForeColor = System.Drawing.Color.DarkGreen;
-            this.btnAdicionarProdutos.Location = new System.Drawing.Point(1328, 19);
+            this.btnAdicionarProdutos.Image = global::UrbanGreem_V002.Properties.Resources.URBAN_GREEN___Botão_mais;
+            this.btnAdicionarProdutos.Location = new System.Drawing.Point(1406, 0);
             this.btnAdicionarProdutos.Name = "btnAdicionarProdutos";
-            this.btnAdicionarProdutos.Size = new System.Drawing.Size(128, 53);
-            this.btnAdicionarProdutos.TabIndex = 4;
-            this.btnAdicionarProdutos.Text = "Adicionar Produtos";
-            this.btnAdicionarProdutos.UseVisualStyleBackColor = true;
+            this.btnAdicionarProdutos.Size = new System.Drawing.Size(80, 86);
+            this.btnAdicionarProdutos.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.btnAdicionarProdutos.TabIndex = 5;
+            this.btnAdicionarProdutos.TabStop = false;
             this.btnAdicionarProdutos.Click += new System.EventHandler(this.btnAdicionarProdutos_Click);
             // 
             // UserControlTituloProdutos
@@ -63,6 +64,7 @@
             this.Name = "UserControlTituloProdutos";
             this.Size = new System.Drawing.Size(1579, 86);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.btnAdicionarProdutos)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -70,6 +72,6 @@
         #endregion
 
         private System.Windows.Forms.PictureBox pictureBox1;
-        private System.Windows.Forms.Button btnAdicionarProdutos;
+        private System.Windows.Forms.PictureBox btnAdicionarProdutos;
     }
 }

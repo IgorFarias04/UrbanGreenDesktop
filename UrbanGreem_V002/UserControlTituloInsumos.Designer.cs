@@ -29,8 +29,9 @@
         private void InitializeComponent()
         {
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.btnAdicionarInsumos = new System.Windows.Forms.Button();
+            this.btnAdicionarInsumos = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.btnAdicionarInsumos)).BeginInit();
             this.SuspendLayout();
             // 
             // pictureBox1
@@ -45,13 +46,13 @@
             // 
             // btnAdicionarInsumos
             // 
-            this.btnAdicionarInsumos.ForeColor = System.Drawing.Color.DarkGreen;
-            this.btnAdicionarInsumos.Location = new System.Drawing.Point(1328, 19);
+            this.btnAdicionarInsumos.Image = global::UrbanGreem_V002.Properties.Resources.URBAN_GREEN___Botão_mais;
+            this.btnAdicionarInsumos.Location = new System.Drawing.Point(1406, 0);
             this.btnAdicionarInsumos.Name = "btnAdicionarInsumos";
-            this.btnAdicionarInsumos.Size = new System.Drawing.Size(128, 53);
-            this.btnAdicionarInsumos.TabIndex = 5;
-            this.btnAdicionarInsumos.Text = "Adicionar Insumos";
-            this.btnAdicionarInsumos.UseVisualStyleBackColor = true;
+            this.btnAdicionarInsumos.Size = new System.Drawing.Size(80, 86);
+            this.btnAdicionarInsumos.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.btnAdicionarInsumos.TabIndex = 6;
+            this.btnAdicionarInsumos.TabStop = false;
             this.btnAdicionarInsumos.Click += new System.EventHandler(this.btnAdicionarInsumos_Click);
             // 
             // UserControlTituloInsumos
@@ -63,6 +64,7 @@
             this.Name = "UserControlTituloInsumos";
             this.Size = new System.Drawing.Size(1579, 86);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.btnAdicionarInsumos)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -70,6 +72,6 @@
         #endregion
 
         private System.Windows.Forms.PictureBox pictureBox1;
-        private System.Windows.Forms.Button btnAdicionarInsumos;
+        private System.Windows.Forms.PictureBox btnAdicionarInsumos;
     }
 }

@@ -29,8 +29,9 @@
         private void InitializeComponent()
         {
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.btnAdicionarFuncionarios = new System.Windows.Forms.Button();
+            this.btnAdicionarFuncionarios = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.btnAdicionarFuncionarios)).BeginInit();
             this.SuspendLayout();
             // 
             // pictureBox1
@@ -45,13 +46,13 @@
             // 
             // btnAdicionarFuncionarios
             // 
-            this.btnAdicionarFuncionarios.ForeColor = System.Drawing.Color.DarkGreen;
-            this.btnAdicionarFuncionarios.Location = new System.Drawing.Point(1328, 19);
+            this.btnAdicionarFuncionarios.Image = global::UrbanGreem_V002.Properties.Resources.URBAN_GREEN___Botão_mais;
+            this.btnAdicionarFuncionarios.Location = new System.Drawing.Point(1406, 0);
             this.btnAdicionarFuncionarios.Name = "btnAdicionarFuncionarios";
-            this.btnAdicionarFuncionarios.Size = new System.Drawing.Size(128, 53);
-            this.btnAdicionarFuncionarios.TabIndex = 2;
-            this.btnAdicionarFuncionarios.Text = "Adicionar Funcionário";
-            this.btnAdicionarFuncionarios.UseVisualStyleBackColor = true;
+            this.btnAdicionarFuncionarios.Size = new System.Drawing.Size(80, 86);
+            this.btnAdicionarFuncionarios.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.btnAdicionarFuncionarios.TabIndex = 3;
+            this.btnAdicionarFuncionarios.TabStop = false;
             this.btnAdicionarFuncionarios.Click += new System.EventHandler(this.btnAdicionarFuncionarios_Click);
             // 
             // UserControlTituloFuncionarios
@@ -64,6 +65,7 @@
             this.Name = "UserControlTituloFuncionarios";
             this.Size = new System.Drawing.Size(1579, 86);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.btnAdicionarFuncionarios)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -71,6 +73,6 @@
         #endregion
 
         private System.Windows.Forms.PictureBox pictureBox1;
-        private System.Windows.Forms.Button btnAdicionarFuncionarios;
+        private System.Windows.Forms.PictureBox btnAdicionarFuncionarios;
     }
 }

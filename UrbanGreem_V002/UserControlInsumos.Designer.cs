@@ -33,21 +33,22 @@
             this.lblValorInsumo = new System.Windows.Forms.Label();
             this.lblQuantidadeInsumo = new System.Windows.Forms.Label();
             this.lblInsumo = new System.Windows.Forms.Label();
-            this.btnEditarInsumos = new System.Windows.Forms.Button();
             this.label5 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
+            this.btnEditarInsumos = new System.Windows.Forms.PictureBox();
             this.panela.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.btnEditarInsumos)).BeginInit();
             this.SuspendLayout();
             // 
             // panela
             // 
             this.panela.BackColor = System.Drawing.Color.White;
+            this.panela.Controls.Add(this.btnEditarInsumos);
             this.panela.Controls.Add(this.btnExcluirInsumos);
             this.panela.Controls.Add(this.lblValorInsumo);
             this.panela.Controls.Add(this.lblQuantidadeInsumo);
             this.panela.Controls.Add(this.lblInsumo);
-            this.panela.Controls.Add(this.btnEditarInsumos);
             this.panela.Controls.Add(this.label5);
             this.panela.Controls.Add(this.label3);
             this.panela.Controls.Add(this.label1);
@@ -100,17 +101,6 @@
             this.lblInsumo.TabIndex = 7;
             this.lblInsumo.Text = "Insumo";
             // 
-            // btnEditarInsumos
-            // 
-            this.btnEditarInsumos.ForeColor = System.Drawing.Color.DarkGreen;
-            this.btnEditarInsumos.Location = new System.Drawing.Point(1327, 20);
-            this.btnEditarInsumos.Name = "btnEditarInsumos";
-            this.btnEditarInsumos.Size = new System.Drawing.Size(84, 76);
-            this.btnEditarInsumos.TabIndex = 6;
-            this.btnEditarInsumos.Text = "Editar Insumos";
-            this.btnEditarInsumos.UseVisualStyleBackColor = true;
-            this.btnEditarInsumos.Click += new System.EventHandler(this.btnEditarInsumos_Click);
-            // 
             // label5
             // 
             this.label5.AutoSize = true;
@@ -144,6 +134,17 @@
             this.label1.TabIndex = 0;
             this.label1.Text = "Insumo:";
             // 
+            // btnEditarInsumos
+            // 
+            this.btnEditarInsumos.Image = global::UrbanGreem_V002.Properties.Resources.URBAN_GREEN___Lapis_editar;
+            this.btnEditarInsumos.Location = new System.Drawing.Point(1306, 19);
+            this.btnEditarInsumos.Name = "btnEditarInsumos";
+            this.btnEditarInsumos.Size = new System.Drawing.Size(80, 80);
+            this.btnEditarInsumos.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.btnEditarInsumos.TabIndex = 17;
+            this.btnEditarInsumos.TabStop = false;
+            this.btnEditarInsumos.Click += new System.EventHandler(this.btnEditarInsumos_Click);
+            // 
             // UserControlInsumos
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -154,6 +155,7 @@
             this.Size = new System.Drawing.Size(1579, 150);
             this.panela.ResumeLayout(false);
             this.panela.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.btnEditarInsumos)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -165,9 +167,9 @@
         private System.Windows.Forms.Label lblValorInsumo;
         private System.Windows.Forms.Label lblQuantidadeInsumo;
         private System.Windows.Forms.Label lblInsumo;
-        private System.Windows.Forms.Button btnEditarInsumos;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.PictureBox btnEditarInsumos;
     }
 }

@@ -314,5 +314,35 @@
   <ItemGroup>
     <None Include="Resources\4211547.png" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\URBAN GREEN - Icone vendas.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\URBAN GREEN - Icone pedidos.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\URBAN GREEN - Icone estoque.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\URBAN GREEN - Botão mais.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\URBAN GREEN - Lapis editar.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\URBAN GREEN - Icone telefone.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\URBAN GREEN - Icone email.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\URBAN GREEN - Botão menos.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\URBAN GREEN - Botão pesquisar.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\URBAN GREEN - Icone carrinho.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

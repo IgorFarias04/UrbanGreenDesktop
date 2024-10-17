@@ -113,6 +113,66 @@ namespace UrbanGreem_V002.Properties {
         /// <summary>
         ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap URBAN_GREEN___Botão_mais {
+            get {
+                object obj = ResourceManager.GetObject("URBAN GREEN - Botão mais", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap URBAN_GREEN___Botão_menos {
+            get {
+                object obj = ResourceManager.GetObject("URBAN GREEN - Botão menos", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap URBAN_GREEN___Botão_pesquisar {
+            get {
+                object obj = ResourceManager.GetObject("URBAN GREEN - Botão pesquisar", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap URBAN_GREEN___Icone_carrinho {
+            get {
+                object obj = ResourceManager.GetObject("URBAN GREEN - Icone carrinho", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap URBAN_GREEN___Icone_email {
+            get {
+                object obj = ResourceManager.GetObject("URBAN GREEN - Icone email", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap URBAN_GREEN___Icone_estoque {
+            get {
+                object obj = ResourceManager.GetObject("URBAN GREEN - Icone estoque", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap URBAN_GREEN___Icone_fornecedores {
             get {
                 object obj = ResourceManager.GetObject("URBAN GREEN - Icone fornecedores", resourceCulture);
@@ -143,6 +203,16 @@ namespace UrbanGreem_V002.Properties {
         /// <summary>
         ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap URBAN_GREEN___Icone_pedidos {
+            get {
+                object obj = ResourceManager.GetObject("URBAN GREEN - Icone pedidos", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap URBAN_GREEN___Icone_produção {
             get {
                 object obj = ResourceManager.GetObject("URBAN GREEN - Icone produção", resourceCulture);
@@ -156,6 +226,36 @@ namespace UrbanGreem_V002.Properties {
         internal static System.Drawing.Bitmap URBAN_GREEN___Icone_sair {
             get {
                 object obj = ResourceManager.GetObject("URBAN GREEN - Icone sair", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap URBAN_GREEN___Icone_telefone {
+            get {
+                object obj = ResourceManager.GetObject("URBAN GREEN - Icone telefone", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap URBAN_GREEN___Icone_vendas {
+            get {
+                object obj = ResourceManager.GetObject("URBAN GREEN - Icone vendas", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap URBAN_GREEN___Lapis_editar {
+            get {
+                object obj = ResourceManager.GetObject("URBAN GREEN - Lapis editar", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

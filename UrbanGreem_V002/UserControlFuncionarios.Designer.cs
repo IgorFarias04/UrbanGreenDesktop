@@ -34,23 +34,24 @@
             this.lblEmailFuncionarios = new System.Windows.Forms.Label();
             this.lblSenha = new System.Windows.Forms.Label();
             this.lblUsuario = new System.Windows.Forms.Label();
-            this.btnEditarFuncionarios = new System.Windows.Forms.Button();
             this.label4 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
+            this.btnEditarFuncionarios = new System.Windows.Forms.PictureBox();
             this.panela.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.btnEditarFuncionarios)).BeginInit();
             this.SuspendLayout();
             // 
             // panela
             // 
             this.panela.BackColor = System.Drawing.Color.White;
+            this.panela.Controls.Add(this.btnEditarFuncionarios);
             this.panela.Controls.Add(this.btnExcluirFuncionario);
             this.panela.Controls.Add(this.lblRole);
             this.panela.Controls.Add(this.lblEmailFuncionarios);
             this.panela.Controls.Add(this.lblSenha);
             this.panela.Controls.Add(this.lblUsuario);
-            this.panela.Controls.Add(this.btnEditarFuncionarios);
             this.panela.Controls.Add(this.label4);
             this.panela.Controls.Add(this.label3);
             this.panela.Controls.Add(this.label2);
@@ -114,16 +115,6 @@
             this.lblUsuario.TabIndex = 7;
             this.lblUsuario.Text = "Usuario";
             // 
-            // btnEditarFuncionarios
-            // 
-            this.btnEditarFuncionarios.Location = new System.Drawing.Point(1327, 20);
-            this.btnEditarFuncionarios.Name = "btnEditarFuncionarios";
-            this.btnEditarFuncionarios.Size = new System.Drawing.Size(84, 76);
-            this.btnEditarFuncionarios.TabIndex = 6;
-            this.btnEditarFuncionarios.Text = "Editar Funcionário";
-            this.btnEditarFuncionarios.UseVisualStyleBackColor = true;
-            this.btnEditarFuncionarios.Click += new System.EventHandler(this.btnEditarFuncionarios_Click);
-            // 
             // label4
             // 
             this.label4.AutoSize = true;
@@ -168,6 +159,17 @@
             this.label1.TabIndex = 0;
             this.label1.Text = "Usuário:";
             // 
+            // btnEditarFuncionarios
+            // 
+            this.btnEditarFuncionarios.Image = global::UrbanGreem_V002.Properties.Resources.URBAN_GREEN___Lapis_editar;
+            this.btnEditarFuncionarios.Location = new System.Drawing.Point(1286, 20);
+            this.btnEditarFuncionarios.Name = "btnEditarFuncionarios";
+            this.btnEditarFuncionarios.Size = new System.Drawing.Size(80, 80);
+            this.btnEditarFuncionarios.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.btnEditarFuncionarios.TabIndex = 14;
+            this.btnEditarFuncionarios.TabStop = false;
+            this.btnEditarFuncionarios.Click += new System.EventHandler(this.btnEditarFuncionarios_Click);
+            // 
             // UserControlFuncionarios
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -178,6 +180,7 @@
             this.Size = new System.Drawing.Size(1579, 150);
             this.panela.ResumeLayout(false);
             this.panela.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.btnEditarFuncionarios)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -190,10 +193,10 @@
         private System.Windows.Forms.Label lblEmailFuncionarios;
         private System.Windows.Forms.Label lblSenha;
         private System.Windows.Forms.Label lblUsuario;
-        private System.Windows.Forms.Button btnEditarFuncionarios;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.PictureBox btnEditarFuncionarios;
     }
 }

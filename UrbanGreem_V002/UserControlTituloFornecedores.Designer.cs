@@ -28,21 +28,11 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.btnAdicionarFornecedores = new System.Windows.Forms.Button();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.btnAdicionarFornecedores = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.btnAdicionarFornecedores)).BeginInit();
             this.SuspendLayout();
-            // 
-            // btnAdicionarFornecedores
-            // 
-            this.btnAdicionarFornecedores.ForeColor = System.Drawing.Color.DarkGreen;
-            this.btnAdicionarFornecedores.Location = new System.Drawing.Point(1328, 19);
-            this.btnAdicionarFornecedores.Name = "btnAdicionarFornecedores";
-            this.btnAdicionarFornecedores.Size = new System.Drawing.Size(128, 53);
-            this.btnAdicionarFornecedores.TabIndex = 1;
-            this.btnAdicionarFornecedores.Text = "Adicionar Fornecedor";
-            this.btnAdicionarFornecedores.UseVisualStyleBackColor = true;
-            this.btnAdicionarFornecedores.Click += new System.EventHandler(this.btnAdicionarFornecedores_Click);
             // 
             // pictureBox1
             // 
@@ -54,6 +44,17 @@
             this.pictureBox1.TabIndex = 0;
             this.pictureBox1.TabStop = false;
             // 
+            // btnAdicionarFornecedores
+            // 
+            this.btnAdicionarFornecedores.Image = global::UrbanGreem_V002.Properties.Resources.URBAN_GREEN___Botão_mais;
+            this.btnAdicionarFornecedores.Location = new System.Drawing.Point(1406, 0);
+            this.btnAdicionarFornecedores.Name = "btnAdicionarFornecedores";
+            this.btnAdicionarFornecedores.Size = new System.Drawing.Size(80, 86);
+            this.btnAdicionarFornecedores.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.btnAdicionarFornecedores.TabIndex = 4;
+            this.btnAdicionarFornecedores.TabStop = false;
+            this.btnAdicionarFornecedores.Click += new System.EventHandler(this.btnAdicionarFornecedores_Click);
+            // 
             // UserControlTituloFornecedores
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -63,6 +64,7 @@
             this.Name = "UserControlTituloFornecedores";
             this.Size = new System.Drawing.Size(1579, 86);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.btnAdicionarFornecedores)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -70,6 +72,6 @@
         #endregion
 
         private System.Windows.Forms.PictureBox pictureBox1;
-        private System.Windows.Forms.Button btnAdicionarFornecedores;
+        private System.Windows.Forms.PictureBox btnAdicionarFornecedores;
     }
 }
